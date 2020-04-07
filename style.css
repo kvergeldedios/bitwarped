@@ -1,0 +1,485 @@
+/*COLORS
+#CCC3B7
+#F1E4E4
+#AFP9393
+
+FONTS
+font-family: 'EB Garamond', serif;
+font-family: 'Montserrat', sans-serif;
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+	width: 100%;
+	height: 60px;
+	position: relative;
+	float: left;
+	z-index: 1000;
+	margin-top: -10px;
+	transition: .3s ease-out;
+}
+
+nav.bar {
+	background-color: #CCC3B7;
+	position: fixed;
+	margin-top: -10px;
+	transition: .3s ease-out;
+}
+
+.logo {
+	width: 12%;
+	margin-top: 20px;
+	margin-left: 150px;
+	position: fixed;
+}
+
+ul {
+	position: fixed;
+	left: 500px;
+	top: 20px;
+}
+
+li {
+	text-decoration: none;
+	list-style: none;
+	display: inline;
+	margin-left: 50px;
+	font-weight: 500;
+	transition: opacity .2s ease-out;
+}
+
+li:hover {
+	opacity: 0.5;
+	transition: opacity .2s ease-out;
+}
+
+#in {
+	margin-left: 170px;
+}
+
+h1 {
+	transition: opacity .2s ease-out;
+}
+
+h1:hover {
+	color: #CCC3B7;
+	opacity: 0.8;
+	transition: opacity .2s ease-out;
+}
+
+.signup {
+	font-size: 16px;
+	position: fixed;
+	left: 1050px;
+	top: 10px;
+	text-align: center;
+	width: 150px;
+	padding: 10px 5px;
+	background-color: black;
+	color: white;
+	font-weight: 50px;
+	border-radius: 3px;
+}
+
+#sulabel {
+	transition: opacity .2s ease-out;
+}
+
+#sulabel:hover {
+	color: #CCC3B7;
+	opacity: 0.8;
+	transition: opacity .2s ease-out;
+}
+
+.pattern1{
+	background-image: url('assets/bg.png');
+	background-position: 80% 200%;
+	background-repeat:no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 900px;
+	position: absolute;
+	z-index: -1;
+	top: -20px;
+	left: 400px;
+}
+
+.plate {
+	background-image: url('assets/plate.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: 150%;
+	position: absolute;
+	top: 50px;
+	width: 750px;
+	height: 750px;
+	z-index: 1;
+	left: -380px;
+}
+
+.phone {
+	background-image: url('assets/phone.png');
+	background-position: 70px;
+	background-repeat:no-repeat;
+	background-size: 92%;
+	position: absolute;
+	top: 400px;
+	width: 400px;
+	height: 710px;
+	z-index: 1;
+	left: 950px;
+	top: 80px;
+}
+
+.landing {
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+	font-size: 50px;
+	top: 200px;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 600px;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+
+.getstarted {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	width: 150px;
+	padding: 10px 5px;
+	background-color: black;
+	color: white;
+	font-weight: 50px;
+	border-radius: 3px;
+	position: relative;
+	float: left;
+	left: 600px;
+	margin-top: 20px;
+	z-index: 25;
+	transition: opacity .2s ease-out;
+}
+
+
+.box2 {
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+	font-size: 50px;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 450px;
+	background-color: #F1E4E4;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.checkplans {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	width: 150px;
+	padding: 10px 5px;
+	background-color: black;
+	color: white;
+	font-weight: 50px;
+	border-radius: 3px;
+	margin-top: 20px;
+	transition: opacity .2s ease-out;
+	position: relative;
+	float: center;
+	left: 600px;
+	z-index: 15;
+}
+
+.groupshot {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 840px;
+	background-image: url('assets/groupshot.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: 100%;
+	z-index: -6
+}
+
+.whitebox {
+	font-family: 'EB Garamond', serif;
+	font-size: 50px;
+	position: absolute;
+	background-color: white;
+	width: 80%;
+	height: 450px;
+	top: 1100px;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.insidewhitebox {
+	width: 40%;
+	margin-left: 150px;
+	margin-top: 50px;
+	position: relative;
+	float: left;
+}
+
+.tryitnow {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	width: 150px;
+	padding: 10px 5px;
+	background-color: black;
+	color: white;
+	font-weight: 50px;
+	border-radius: 3px;
+	margin-top: 20px;
+	transition: opacity .2s ease-out;
+}
+
+.window {
+	position: relative;
+	float: left;
+	width: 30%;
+	height: 300px;
+	background-image: url('assets/dragdrop.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: contain;
+	top: 75px;
+	left: 50px;
+}
+
+.pinkbox {
+	background-color: #AF9393;
+	font-family: 'EB Garamond', serif;
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	width: 80%;
+	height: 450px;
+	top: 2050px;
+	left: 270px;
+	box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.halfphone {
+	position: relative;
+	float: left;
+	width: 40%;
+	height: 400px;
+	background-image: url('assets/halfphone.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: contain;
+	left: 40px;
+	top: 50px;
+}
+
+.insidepinkbox {
+	width: 40%;
+	margin-left: 30px;
+	margin-top: 55px;
+	position: relative;
+	float: left;
+}
+
+.knowmore {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	width: 150px;
+	padding: 10px 5px;
+	border: 1px solid white;
+	color: white;
+	font-weight: 50px;
+	border-radius: 3px;
+	margin-top: 20px;
+	transition: background-color .2s ease-out;
+	z-index: 200;
+}
+
+.knowmore:hover {
+	background-color: #C6B0B0;
+	transition: background-color .2s ease-out;
+}
+
+.pattern2 {
+	background-image: url('assets/bg2.png');
+	background-position: 60% 20%;
+	background-repeat:no-repeat;
+	background-size:120%;
+	height: 400px;
+	width: 800px;
+	position: absolute;
+	z-index: -2;
+	top: 1700px;
+	left: 550px;
+}
+
+
+.testim {
+	width: 50%;
+	height: 800px;
+	position: relative;
+	top: 480px;
+	left: 350px;
+	margin: auto 0;
+
+}
+.shop {
+	background-image: url('assets/shops.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	width: 300px;
+	position: relative;
+	float: left;
+	margin-left: 20px;
+}
+
+.cho {
+	background-image: url('assets/cho.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	width: 300px;
+	position: relative;
+	float: right;
+	margin-right: 20px;
+}
+
+.outline {
+	width: 300px;
+	height: 5px;
+	background-color: #AF9393;
+	position: relative;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.quote {
+	position: relative;
+	top: 20px;
+}
+
+#q1 {
+	font-family: 'EB Garamond', serif;
+	font-size: 18px;
+	width: 300px;
+	margin-left: 20px;
+	font-style: italic;
+}
+
+.markcho {
+	text-align: right;
+	position: relative;
+	float: right;
+	margin-right: 20px;
+	line-height: 15px;
+	top: -65px;
+}
+
+#small {
+	text-align: right;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.outlinelong {
+	width: 635px;
+	height: 5px;
+	background-color: #AF9393;
+	position: relative;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	top: -50px;
+}
+
+.qmark1 {
+	background-image: url('assets/qmark1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 2600px;
+	left: 260px;
+}
+
+.qmark2 {
+	background-image: url('assets/qmark2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 3150px;
+	left: 1020px;
+}
+
+.pattern3 {
+	background-image: url('assets/bg2.png');
+	background-position: 60% 20%;
+	background-repeat:no-repeat;
+	background-size:120%;
+	height: 400px;
+	width: 800px;
+	position: absolute;
+	z-index: -100;
+	top: 3100px;
+	left: -200px;
+}
+
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: #CCC3B7;
+	position: relative;
+	float: left;
+	top: 600px;
+	text-align: center;
+}
+
+#foot {
+	font-size: 10px;
+	line-height: 20px;
+}
